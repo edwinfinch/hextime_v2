@@ -1,0 +1,30 @@
+{
+    "appKeys": {},
+    "longName": "Hextime 2.0",
+    "uuid": "106c062e-6b67-4f47-8113-e12d98647ffa",
+    "versionLabel": "12.0",
+    "companyName": "Edwin Finch",
+    "resources": {
+        "media": [
+            {
+                "file": "images/rsz_download_6.png",
+                "type": "png",
+                "name": "MENU_ICON",
+                "menuIcon": true
+            },
+            {
+                "file": "fonts/TerminusBold.ttf",
+                "type": "font",
+                "name": "FONT_TERMINUS_56"
+            }
+        ]
+    },
+    "watchapp": {
+        "watchface": true
+    },
+    "capabilities": [
+        ""
+    ],
+    "shortName": "Hextime 2.0",
+    "versionCode": 1
+}
