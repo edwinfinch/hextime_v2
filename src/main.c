@@ -13,8 +13,7 @@ Window *window;
 TextLayer *time_layer;
 GFont *main_font;
 int hour, minute;
-char time_text[] = "00:00..";
-char buffer[6];
+char time_text[] = "00:00";
 char nyb2hex[] = "0123456789ABCDEF";
 
 void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
@@ -25,8 +24,7 @@ void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
 	time_text[1]=nyb2hex[((hour) & 0x0F)];
 	time_text[3]=nyb2hex[(((minute) & 0xF0) >> 4)];
 	time_text[4]=nyb2hex[((minute) & 0x0F)];
-	snprintf(buffer, sizeof(buffer), "%s", time_text);
-	text_layer_set_text(time_layer, buffer);
+	text_layer_set_text(time_layer, time_text);
 }
 
 void init() {
